@@ -1,10 +1,9 @@
-// src/main/java/com/exemplo/hotel/service/ReservaService.java
 package com.example.hotel.service;
 
+import com.example.hotel.model.Reserva;
+import com.example.hotel.repository.ReservaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.example.hotel.repository.ReservaRepository;
-import com.example.hotel.model.Reserva;
 import java.util.List;
 import java.util.Optional;
 
