@@ -1,0 +1,10 @@
+[phases.setup]
+nixPkgs = ["jdk17"]  # Use a versão do JDK que seu projeto precisa
+
+[phases.build]
+commands = [
+    "./mvnw clean package"  # Comando para build com Maven
+]
+
+[start]
+command = "java -jar target/seu-projeto.jar"  # Substitua pelo nome do seu arquivo .jar
