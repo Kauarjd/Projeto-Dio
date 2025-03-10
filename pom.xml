@@ -43,13 +43,6 @@
 			<version>${springdoc-openapi.version}</version>
 		</dependency>
 
-		<!-- H2 Database (para ambiente de desenvolvimento) -->
-		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-
 		<!-- PostgreSQL Driver (para ambiente de produção) -->
 		<dependency>
 			<groupId>org.postgresql</groupId>
