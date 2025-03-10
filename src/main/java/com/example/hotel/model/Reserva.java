@@ -32,4 +32,9 @@ public class Reserva {
 
     @NotNull(message = "A data de check-out é obrigatória")
     private LocalDate dataCheckOut;
+
+    @AssertTrue(message = "A data de check-out deve ser posterior à data de check-in")
+    private boolean isDataCheckOutValida() {
+        return dataCheckOut == null || dataCheckIn == null || dataCheckOut.isAfter(dataCheckIn);
+    }
 }
